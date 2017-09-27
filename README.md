@@ -26,7 +26,7 @@
 		<footer>
     		<ul>
         		<li><a href="mailto:flippenemily@gmail.com">email</a></li>
-        		<li><a href="https://github.com/flippenemily">github.com/flippenemily</a></li>
+        		<li><a href="underwriteyourlife.github.io">underwriteyourlife.github.io</a></li>
 			</ul>
 		</footer>
 	</body>
