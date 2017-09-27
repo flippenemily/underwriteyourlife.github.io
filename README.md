@@ -2,7 +2,9 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title> Underwrite Life </title>
+		<title> 
+			Underwrite Life 
+		</title>
 		<!-- link to main stylesheet -->
 		<link rel="stylesheet" type="text/css" href="/css/main.css">
 	</head>
