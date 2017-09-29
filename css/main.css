@@ -42,3 +42,11 @@ ul.posts li {
     list-style: none;
 }
 
+h1 {
+    border-style: dotted;
+    border-width: 2px;
+    border-left-width: 5px;
+    border-right-width: 5px;
+    border-color: purple;
+}
+    
