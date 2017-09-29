@@ -4,6 +4,71 @@ layout: default
 title: Underwrite Your Life
 ---
 <head>
+	<style>
+.column {
+ margin: 15px 15px 0;
+ padding: 0;
+}
+.column:last-child {
+ padding-bottom: 60px;
+}
+.column::after {
+ content: '';
+ clear: both;
+ display: block;
+}
+.column div {
+ position: relative;
+ float: left;
+ width: 300px;
+ height: 200px;
+ margin: 0 0 0 25px;
+ padding: 0;
+}
+.column div:first-child {
+ margin-left: 0;
+}
+.column div span {
+ position: absolute;
+ bottom: -20px;
+ left: 0;
+ z-index: -1;
+ display: block;
+ width: 300px;
+ margin: 0;
+ padding: 0;
+ color: #444;
+ font-size: 18px;
+ text-decoration: none;
+ text-align: center;
+ -webkit-transition: .3s ease-in-out;
+ transition: .3s ease-in-out;
+ opacity: 0;
+}
+figure {
+ width: 300px;
+ height: 200px;
+ margin: 0;
+ padding: 0;
+ background: #fff;
+ overflow: hidden;
+}
+figure:hover+span {
+ bottom: -36px;
+ opacity: 1;
+}
+
+.hover08 figure img {
+ -webkit-filter: grayscale(100%);
+ filter: grayscale(100%);
+ -webkit-transition: .3s ease-in-out;
+ transition: .3s ease-in-out;
+}
+.hover08 figure:hover img {
+ -webkit-filter: grayscale(0);
+ filter: grayscale(0);
+}
+</style>
 	<!-- Global Site Tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107210718-1"></script>
 <script>
@@ -19,8 +84,14 @@ title: Underwrite Your Life
 	<h1>Hi, my name is Emily. I am an underwriter, unqualified personal finance enthuasist, and an even more unqualified chef</h1>
 	<break />
 	<break />
-	<img class="img-circle" src="https://github.com/underwriteyourlife/underwriteyourlife.github.io/blob/master/_photos/0H4A1687_blemishfix.jpg?raw=true"
-	     width="200" height="300" />
+	</div>
+<div class="hover08 column">
+<div>
+<figure><img class="img-circle" src="https://github.com/underwriteyourlife/underwriteyourlife.github.io/blob/master/_photos/0H4A1687_blemishfix.jpg?raw=true"
+	     width="200" height="300" /></figure>
+<span>Hover Text</span>
+</div>
+<div class="blurb">
 	<p>My passion (read: <em>obsession</em>) for personal finance has manifested itself in a number of ways. I hope my cynicism towards the patriarchy that is Wall Street in combination with my love for thrify cooking can offer you entertainment and inspiration   <a href="/about">Read more about my life...</a></p>
 </div><!-- /.blurb -->
 </body>
