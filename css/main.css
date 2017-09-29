@@ -46,4 +46,13 @@ ul.posts li {
 .img-circle {
     border-radius: 50%;
 }
+	
+.left {
+	float:left;
+}
+.right {
+	float:right;
+	text-align:right;
+}
+
     
