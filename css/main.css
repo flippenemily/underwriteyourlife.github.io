@@ -22,6 +22,11 @@ a:hover {
 h1 {
     font-size: 3em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    border-style: dotted;
+    border-width: 2px;
+    border-left-width: 5px;
+    border-right-width: 5px;
+    border-color: purple;
 }
 p {
     font-size: 1.5em;
@@ -42,11 +47,4 @@ ul.posts li {
     list-style: none;
 }
 
-h1 {
-    border-style: dotted;
-    border-width: 2px;
-    border-left-width: 5px;
-    border-right-width: 5px;
-    border-color: purple;
-}
     
