@@ -10,6 +10,33 @@
 				<a href="#">About our Product</a>
 				<a href="#">Contact us</a>
 				</nav>
+				<section>
+<button class="toggle-menu menu-left">Slide Left Menu</button>
+</section>
+
+.main > section button {
+ border: none;
+ background: #47a3da;
+ color: #fff;
+ padding: 1.5em;
+ cursor: pointer;
+ margin: 10px 0;
+ font-size: 0.8em;
+ margin-left:250px;
+}
+
+.main > section button:hover {
+ background: #258ecd;
+}
+
+.main > section button.active {
+ background: #0d77b6;
+}
+
+.main > section button.disabled {
+ background: #aaa;
+ pointer-events: none;
+}
 
 
 				<title>{{ page.title }}</title>
