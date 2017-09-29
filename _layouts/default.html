@@ -10,6 +10,31 @@
 				<meta name="description" content="Left slider menu using jquery" />
 				<meta name="keywords" content="sliding menu, pushing menu, navigation, responsive, menu, css, jquery, mobile menu" />
 				<link rel="stylesheet" type="text/css" href="/css/main.css">
+				<style>
+					.main > section button {
+					 border: none;
+					 background: #47a3da;
+					 color: #fff;
+					 padding: 1.5em;
+					 cursor: pointer;
+					 margin: 10px 0;
+					 font-size: 0.8em;
+					 margin-left:250px;
+					}
+
+					.main > section button:hover {
+					 background: #258ecd;
+					}
+
+					.main > section button.active {
+					 background: #0d77b6;
+					}
+
+					.main > section button.disabled {
+					 background: #aaa;
+					 pointer-events: none;
+					}
+				</style>
 				<!-- Global Site Tag (gtag.js) - Google Analytics -->
 				<script async src="https://www.googletagmanager.com/gtag/js?id=UA-107210718-1"></script>
 				<script>
@@ -18,7 +43,7 @@
 	  			gtag('js', new Date());
 				gtag('config', 'UA-107210718-1');
 				</script>
-	
+				
 
 			</head>
 			<body>
