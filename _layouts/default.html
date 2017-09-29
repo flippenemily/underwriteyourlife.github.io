@@ -4,6 +4,11 @@
 
 				<title>{{ page.title }}</title>
 				<!-- link to main stylesheet -->
+				<meta charset="UTF-8" />
+				<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+				<meta name="viewport" content="width=device-width, initial-scale=1.0">
+				<meta name="description" content="Left slider menu using jquery" />
+				<meta name="keywords" content="sliding menu, pushing menu, navigation, responsive, menu, css, jquery, mobile menu" />
 				<link rel="stylesheet" type="text/css" href="/css/main.css">
 				<!-- Global Site Tag (gtag.js) - Google Analytics -->
 				<script async src="https://www.googletagmanager.com/gtag/js?id=UA-107210718-1"></script>
@@ -17,16 +22,43 @@
 
 			</head>
 			<body>
-				<nav>
-		    		<ul>
-		        		<li><a href="/">Home</a></li>
-			        	<li><a href="/about">About</a></li>
-		        		<li><a href="/mealprep">Meal Prep Sunday</a></li>
-		        		<li><a href="/personalfinance">Personal Finance</a></li>
-					<li><img src="https://github.com/underwriteyourlife/underwriteyourlife.github.io/blob/master/_photos/Logo1.JPG?
-						raw=true" width="250" height="125"/></li>
-		    		</ul>
+				<?php
+				include('header.php');
+				?>
+				<div style="height:150px;"> &nbsp;</div>
+				<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left">
+				<h3>Menu</h3>
+				<a href="#">Home</a>
+				<a href="#">About us</a>
+				<a href="#">Vision & Mission</a>
+				<a href="#">Services</a>
+				<a href="#">About our Product</a>
+				<a href="#">Contact us</a>
 				</nav>
+				<div class="container">
+				<div class="main">
+				<section>
+				<button class="toggle-menu menu-left">Slide Left Menu</button>
+				</section>
+				</div>
+				</div>
+				<script src="js/jquery-1.9.1.min.js"></script>
+				<script src="js/jPushMenu.js"></script>
+				<script>
+				jQuery(document).ready(function($) {
+				$('.toggle-menu').jPushMenu();
+				});
+				</script>
+					<nav>
+		    			<ul>
+		        			<li><a href="/">Home</a></li>
+			        		<li><a href="/about">About</a></li>
+		        			<li><a href="/mealprep">Meal Prep Sunday</a></li>
+		        			<li><a href="/personalfinance">Personal Finance</a></li>
+						<li><img src="https://github.com/underwriteyourlife/underwriteyourlife.github.io/blob/master/_photos/Logo1.JPG?
+						raw=true" width="250" height="125"/></li>
+		    			</ul>
+					</nav>
 				<div class="container">
 					{{ content }}
 				</div>
